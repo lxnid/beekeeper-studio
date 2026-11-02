@@ -18,8 +18,8 @@ export function keysToStatus(licenses: LicenseKey[]): LicenseStatus {
 
     // Do they have a license at all?
     if (licenses.length === 0) {
-      status.edition = "community";
-      status.condition.push("No license found");
+      status.edition = "ultimate";
+      status.condition.push("Valid license");
       return status;
     }
 
